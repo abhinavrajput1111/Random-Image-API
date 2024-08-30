@@ -8,8 +8,9 @@ async function getImage() {
 
 const app = express();
 
-let port = 6969;
-let hostname = "127.0.0.1";
+let port = process.env.PORT || 6969;
+
+// let hostname = "127.0.0.1";
 app.use(express.json());
 // getImage();
 
